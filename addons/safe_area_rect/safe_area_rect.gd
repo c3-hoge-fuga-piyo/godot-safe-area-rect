@@ -4,13 +4,13 @@ extends Control
 
 
 @export
-var ignore_left: bool = false
+var ignore_anchor_left: bool = false
 @export
-var ignore_top: bool = false
+var ignore_anchor_top: bool = false
 @export
-var ignore_right: bool = false
+var ignore_anchor_right: bool = false
 @export
-var ignore_bottom: bool = false
+var ignore_anchor_bottom: bool = false
 
 
 var _initial_anchor_left: float
@@ -51,10 +51,10 @@ func apply_safe_area_anchors(force: bool = false) -> void:
 
 	set_safe_area_anchors(
 			self,
-			NAN if ignore_left else _initial_anchor_left,
-			NAN if ignore_top else _initial_anchor_top,
-			NAN if ignore_right else _initial_anchor_right,
-			NAN if ignore_bottom else _initial_anchor_bottom,
+			NAN if ignore_anchor_left else _initial_anchor_left,
+			NAN if ignore_anchor_top else _initial_anchor_top,
+			NAN if ignore_anchor_right else _initial_anchor_right,
+			NAN if ignore_anchor_bottom else _initial_anchor_bottom,
 			Rect2i(
 					get_window_position(),
 					window_size,
