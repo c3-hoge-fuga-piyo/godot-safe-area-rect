@@ -12,7 +12,7 @@ config_version=5
 
 config/name="SafeAreaRect"
 config/features=PackedStringArray("4.2", "GL Compatibility")
-config/icon="res://addons/safe_area_rect/safe_area_rect.svg"
+config/icon="res://icon.png"
 
 [editor_plugins]
 
