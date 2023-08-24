@@ -1,3 +1,5 @@
+@icon("./safe_area_rect.svg")
+class_name SafeAreaRect
 extends Control
 
 
