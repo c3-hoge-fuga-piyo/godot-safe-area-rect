@@ -37,9 +37,6 @@ func _process(_delta: float) -> void:
 
 
 func apply_safe_area_anchors(force: bool = false) -> void:
-	if Engine.is_editor_hint():
-		return
-
 	if not force and not is_fullscreen():
 		return
 
